@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Movie Magic - a simple movie recommendation website.">
+  <title>Movie Magic | Movie Recommendation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Movie Magic home">🎬 Movie Magic</a>
+    <nav><a href="#home">Home</a><a href="#movies">Movies</a><a href="#about">About</a></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">FIND YOUR NEXT FAVORITE</p>
+      <h1>Movies for every mood.</h1>
+      <p>Search movies and discover something great to watch.</p>
+      <label class="search-box">
+        <span class="sr-only">Search movies</span>
+        <input id="searchInput" type="search" placeholder="Search by movie title..." autocomplete="off">
+        <button id="searchButton" type="button">Search</button>
+      </label>
+      <p class="hint">Tip: try “Interstellar”, “3 Idiots”, or “Dangal”.</p>
+    </section>
+
+    <section class="content-section" id="movies">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Recommended Movies</h2></div>
+        <label class="filter-label">Genre
+          <select id="genreFilter">
+            <option value="All">All genres</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Sports">Sports</option>
+          </select>
+        </label>
+      </div>
+      <p id="resultMessage" class="result-message" aria-live="polite"></p>
+      <div id="movieGrid" class="movie-grid"></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <p class="eyebrow">ABOUT THE PROJECT</p>
+      <h2>Movie discovery, made simple.</h2>
+      <p>Movie Magic is a beginner-friendly Movie Recommendation System built with HTML, CSS, and JavaScript. It filters a sample movie collection by title and genre and suggests movies based on selected categories.</p>
+    </section>
+  </main>
+
+  <footer><p>Movie Magic · BCA Semester V Mini Project · 2026–27</p><p>Movie details in this demo are sample data for educational use.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
